@@ -3,13 +3,16 @@ import pysftp
 # ADDRESS OF SERVER
 ip = '<HOST>'
 
+# PORT OF SERVER
+port = '<PORT>'
+
 # USERNAME OF SERVER
 username = '<USERNAME>'
 
 # PASSWORD OF SERVER
 password = '<PASSWORD>'
 
-with pysftp.Connection(host=ip, username=username, password=password) as sftp:
+with pysftp.Connection(host=ip, username=username, password=password, port=port) as sftp:
     
     print('Connection succesfully stablished ... ')
     
